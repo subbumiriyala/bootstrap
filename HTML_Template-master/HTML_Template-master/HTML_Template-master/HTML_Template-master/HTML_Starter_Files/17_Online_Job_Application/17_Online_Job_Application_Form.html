@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Job Application Form</title>
+    <style>
+        body{
+            background-image:url("../img/background.jpg");
+            color:black;
+            font-family:'Comic Sans MS';
+            background-color:firebrick;
+        }
+        h1{
+            text-align:center;
+            text-shadow:0 0 15px red;
+            font-family:'Comic Sans MS''Arabic Typesetting';
+            font-size:40px;
+            font-weight:400;
+            color:white;
+        }
+        table{
+            width:100%;
+        }
+        td{
+            padding:10px;
+        }
+        legend{
+            padding:10px;
+            color:white;
+            box-shadow:0 0 15px black;
+            border:3px solid white;
+            background-color:darkgoldenrod;
+            border-top-left-radius:20px;
+            border-bottom-right-radius:20px;
+        }
+        fieldset{
+            border:2px solid black;
+            background-color:rosybrown;
+            box-shadow:0 0 15px black;
+            margin:30px;
+            border-top-right-radius:40px;
+            border-bottom-left-radius:40px;
+        }
+        .button{
+            padding:10px 40px;
+            background-color:green;
+            color:white;
+            border:none;
+            outline :none;
+        }
+        .button:hover{
+            box-shadow:0 0 15px black;
+        }
+        input[type=text],
+        input[type=date],
+        input[type=month],
+        input[type=number],
+        input[type=time]{
+            border:none;
+            outline:none;
+            background-color:white;
+            color:black;
+            width:200px;
+            height:40px;
+            border-radius:5px;
+        }
+        textarea {
+            border: none;
+            outline: none;
+            background-color: white;
+            color: black;
+            width: 200px;
+         
+            border-radius: 5px;
+        }
+        input[type=text]:focus,
+        input[type=date]:focus,
+        input[type=month]:focus,
+        input[type=number]:focus,
+        input[type=time]:focus,
+        textarea:focus{
+            box-shadow:0 0 15px red;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Online job application form</h1>
+    <fieldset>
+        <legend>personal informatiom</legend>
+        <table>
+            <tr>
+                <td>First name</td>
+                <td><input type="text" /></td>
+                <td>Middle Name</td>
+                <td><input type="text" /></td>
+                <td>last Name</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>Father's Name</td>
+                <td><input type="text" /></td>
+                <td>Mother's name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Current Address</td>
+                <td><textarea rows="5" cols="20"></textarea></td>
+                <td>Perminent Addres</td>
+                <td><textarea rows="5" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td>Phone Numbers</td>
+            </tr>
+            <tr>
+                <td>landline number</td>
+                <td><input type="text" /></td>
+                <td>Phone Number</td>
+               <td><input type="number" /></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date" /></td>
+                <td>Place of Birth</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">Select a gender</td>
+                <td><input type="radio" name="radio" value="male" />male</td>
+                <td><input type="radio" name="radio" value="Female" />Femail</td>
+            </tr>
+            <tr>
+            <td>Hight qualification</td>
+                <td><input type="text" /></td>
+                <td>Year of Passing</td>
+                <td><input type="month" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">Language Known</td>
+                <td><input type="checkbox" />Hindi</td>
+                <td><input type="checkbox" />Telugu</td>
+                <td><input type="checkbox" />English</td>
+            </tr>
+            <tr>
+                <td colspan="2">Selet Your Hobbies</td>
+                <td><input type="checkbox" />Coding</td>
+                <td><input type="checkbox" />Eating</td>
+                <td><input type="checkbox" />Sleeping</td>
+            </tr>
+            <tr>
+                <td>About Your Self</td>
+                <td colspan="4"><textarea rows="5" cols="20"></textarea></td>
+            </tr>
+            <tr>
+            <td>Nationlity</td>
+            <td><select>
+                <option>India</option>
+                <option>America</option>
+                <option>Astralia</option>
+                </select></td>
+                </tr>
+            <tr>
+                <td>AdarCard Number</td>
+                <td><input type="number" /></td>
+                <td>PanCard number</td>
+                <td><input type="text" /></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Eduction Details</legend>
+        <table>
+            <tr>
+            <td>SNO</td>
+            <td>Qualification Number</td>
+            <td>Institute/University</td>
+            <td>Year Passing</td>
+            <td>Marks(%)</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><input type="text" /></td>
+                <td><input type="text" /></td>
+                <td><input type="month" /></td>
+                <td><input type="number" /></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><input type="text" /></td>
+                <td><input type="text" /></td>
+                <td><input type="month" /></td>
+                <td><input type="number" /></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><input type="text" /></td>
+                <td><input type="text" /></td>
+                <td><input type="month" /></td>
+                <td><input type="number" /></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Work Experience</legend>
+        <table>
+            <tr>
+                <td>SNO </td>
+                <td>Current Company</td>
+                <td>Form</td>
+                <td>To</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><textarea cols="20" rows="5"></textarea></td>
+                <td><textarea cols="20" rows="5"></textarea></td>
+                <td><input type="month" /></td>
+                <td><input type="month" /></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><textarea cols="20" rows="5"></textarea></td>
+                <td><textarea cols="20" rows="5"></textarea></td>
+                <td><input type="month" /></td>
+                <td><input type="month" /></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><textarea cols="20" rows="5"></textarea></td>
+                <td><textarea cols="20" rows="5"></textarea></td>
+                <td><input type="month" /></td>
+                <td><input type="month" /></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Other Details</legend>
+        <table>
+            <tr>
+                <td>Job type</td>
+                <td><input type="radio" name="radio" value="permanent"/>permanent</td>
+                <td><input type="radio" name="radio" value="Temparary" />Contract</td>
+                <td><input type="radio" name="radio" value="other" />Other</td>
+            </tr>
+            <tr><td>Date of Joining</td>
+                <td><input type="date" /></td>
+            <td>Time of joining</td>
+            <td><input type="time" /></td>
+            </tr>
+            <tr>
+                <td>Prefored Job Location</td>
+                <td><input type="radio" name="radio" value="hyd" />Hyderbad </td>
+                <td><input type="radio" name="radio" value="ban" />Bangloue</td>
+                <td><input type="radio" name="radio" value="gun" />Gunter</td>
+            </tr>
+            <tr>
+                <td colspan="2">Villing TO Relocate Hyderbad</td>
+                <td><input type="radio" name="radio" value="yes" />Yes</td>
+                <td><input type="radio" name="radio" value="no" />No</td>
+            </tr>
+            <tr>
+                <td colspan="4"><input type="checkbox" />Iam here declaring that all the above mentioned information is true as per my knowledge.
+</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" class="button" /></td>
+                <td><input type="reset" class="button" /></td>
+                <td></td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>

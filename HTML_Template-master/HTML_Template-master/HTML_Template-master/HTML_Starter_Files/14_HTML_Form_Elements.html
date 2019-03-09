@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        h1{
+            text-align:center;
+        }
+        form{
+            background-color:lightgreen;
+            padding:15px;
+            width:400px;
+            box-shadow:0 0 15px;
+            border:1px solid black;
+            text-align:center;
+            color:black;
+           
+        }
+        input {
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+            background:none;
+        }
+        button{
+            background-color:green;
+            padding:10px;
+            text-align:center;
+            border:none;
+            width:70px;
+        }
+        input:hover{
+            border-bottom:2px solid red;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Simple Login Form -->
+    <h2>Simple Login Form</h2>
+    <form>
+        <h1>login form</h1>
+        <lable for="username">username</lable>
+        <input type="text" /><br /><br />
+        <label for="password">password</label>
+        <input type="password" /><br /><br />
+        <button type="button">sumbmit</button>
+        <button type="reset">reset</button>
+
+    </form>
+    <!-- Login form with Table -->
+    <h2>Login Form with Table</h2>
+    <form>
+        <table>
+       <tr>
+           <td><label>username</label></td>
+           <td><input type="text" /></td>
+       </tr>
+            <tr>
+                <td><label>password</label></td>
+                <td><input type="password" /></td>
+            </tr>
+            <tr>
+               
+                <td><button type="submit">button</button></td>
+                <td><button type="reset">reset</button></td>
+
+            </tr>
+           
+            </table>
+    </form>
+    <!-- Select box with Options -->
+    <h2>Select Box with Options</h2>
+    <form>
+        <label>select a techonilogy</label>
+        <select>
+            <option>html</option>
+            <option>css</option>
+            <option>bootstrap</option>
+            <option>javascript</option>
+            <option>jquery</option>
+            <option>AJAX</option>
+            <option>Angular 7</option>
+        </select>
+    </form>
+    <!--select box with opt grop-->
+    <h2>select box with opt group</h2>
+    <form>
+        <lable>select a techonalogy</lable>
+        <select>
+            <optgroup label="language">
+                <option>java</option>
+                <option>php</option>
+                <option>phytan</option>
+                <option>.net</option>
+            </optgroup>
+            <optgroup label="script">
+                <option>shell</option>
+                <option>javascript</option>
+                <option></option>
+                <optivon>.net</optivon>
+            </optgroup>
+        </select>
+    </form>
+    <!-- Textarea box -->
+    <h2>Textarea box</h2>
+    <form>
+        <label>your comments</label>
+        <textarea rows="5" cols="30" maxlength="100"></textarea>
+    </form>
+    <!-- Datalist (HTML5) -->
+    <h2>Datalist (HTML5)</h2>
+    <form>
+        <label>select a techologys</label>
+        <input list="tech" />
+        <datalist id="tech">
+            <option>shell</option>
+            <option>javascript</option>
+            <option></option>
+            <optivon>.net</optivon>
+            <option>shell</option>
+            <option>javascript</option>
+            <option></option>
+            <optivon>.net</optivon>
+        </datalist>
+    </form>
+    <!--field set,legend tags-->
+    <h2>field set,legend tags</h2>
+
+<br /><br /><br /><br />
+</body>
+</html>

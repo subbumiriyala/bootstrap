@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Aside Element</title>
+    <style>
+        html{
+            scroll-behavior:smooth;
+        }
+        body{
+            font-family:'Comic Sans MS';
+            margin:0;
+        }
+        aside{
+            background-color:black;
+            width:250px;
+            text-align:center;
+            position:fixed;
+            float:left;
+            left:0;
+            top:0;
+            height:100%;
+        }
+            aside ul {
+                list-style-type: none;
+                overflow:hidden;
+                padding:0;
+                margin:0;
+            }
+        aside ul li a{
+            text-decoration:none;
+            color:white;
+            display:block;
+            font-size:20px;
+            padding:15px 30px;
+        }
+        aside ul li a:hover{
+            background-color:darkkhaki;
+        }
+        aside img{
+            width:100px;
+            height:100px;
+            border-radius:60px;
+            border:5px solid white;
+            margin:20px;
+        }
+        section{
+            margin-left:270px;
+        }
+        table td{
+           padding:10px;
+        }
+        button{
+            padding:15px 40px;
+            background-color:blue;
+            outline:none;
+            border:none;
+        }
+       table td img{
+          width:100px;
+          height:100px;
+          box-shadow:0 0 15px black;
+        }
+       .contact-me table{
+           margin:auto;
+           background-color:ghostwhite;
+           border:1px solid brown;
+           box-shadow:0 0 15px black;
+           padding:10px;
+           outline:1px solid brown;
+
+       }
+    </style>
+</head>
+<body>
+    <!-- HTML Aside Element -->
+    <aside>
+        <img src="img/corporate.jpg" />
+        <ul>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#explanation">Explanation</a></li>
+            <li><a href="#certifications">certifications</a></li>
+            <li><a href="#references">References</a></li>
+            <li><a href="#contact-me">Contact me</a></li>
+        </ul>
+    </aside>
+    <section id="about-me">
+        <h1>HEADING OF THE PAGE</h1>
+        <h4>Experienced Full Stack Developer</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, ducimus esse exercitationem, expedita in laborum modi nisi nostrum odit provident quae suscipit tempora, temporibus! At autem cumque debitis dicta dignissimos dolorum earum est iusto laborum maxime nemo nesciunt nobis non praesentium quia quo quos, rerum saepe suscipit tempora tempore voluptate.</p>     
+    </section>
+    <section id="experience">
+        <h1>Experience</h1>
+        <table>
+            <tr>
+                <td><h1>Infosys</h1></td>
+                <td><h1>Google</h1></td>
+                <td><h1>HCL</h1></td>
+            </tr>
+            <tr>
+                <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p></td>
+                <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p></td>
+               <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p></td>
+            </tr>
+            <tr>
+                <td><button class="col-sm-2">button</button></td> 
+                <td><button class="col-sm-2">button</button></td>
+                <td><button class="col-sm-2">button</button></td>
+            </tr>
+        </table>
+    </section>
+    <section id="explanation">
+        <h1>Education</h1>
+        <table>
+            <tr>
+                <td><img src="img/forest.jpg" /></td>
+                <td><img src="img/water.jpg" /></td>
+                <td><img src="img/water_flow.gif" /></td>
+            </tr>
+            <tr>
+                <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p></td>
+                <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p></td>
+                <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p></td>
+            </tr>
+            <tr>
+                <td><button class="col-sm-2">button</button></td>
+                <td><button class="col-sm-2">button</button></td>
+                <td><button class="col-sm-2">button</button></td>
+            </tr>
+        </table>
+    </section>
+    <section id="certifications">
+        <h1>Certifications</h1>
+        <table>
+            <tr>
+                <td><img src="img/forest.jpg" /></td>
+                <td><img src="img/water.jpg" /></td>
+                <td><img src="img/water_flow.gif" /></td>
+                <td><img src="img/water_flow.gif" /></td>
+            </tr>
+            <tr>
+                <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p></td>
+                <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p></td>
+                <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p></td>
+                <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p></td>
+            </tr>
+            <tr>
+                <td><button class="col-sm-2">button</button></td>
+                <td><button class="col-sm-2">button</button></td>
+                <td><button class="col-sm-2">button</button></td>
+                <td><button class="col-sm-2">button</button></td>
+            </tr>
+        </table>
+    </section>
+    <section id="references">
+        <h2>reference</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci aperiam asperiores blanditiis, consequuntur culpa cumque debitis distinctio eaque earum enim eum exercitationem fuga illum laborum minima modi molestias neque nihil nisi non numquam odio officia officiis pariatur praesentium quae quis quod repellat reprehenderit saepe sed similique ullam voluptates voluptatibus voluptatum! Dicta eius fugit hic inventore, ipsam nobis perferendis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid autem, blanditiis dicta ea eaque eos esse facilis impedit ipsum itaque iure iusto modi necessitatibus optio, praesentium quasi quisquam rem repellendus reprehenderit tenetur ullam unde. Aliquam distinctio exercitationem placeat ratione veniam. Ea earum fuga iusto nesciunt, quae sapiente tempore vero! A aspernatur assumenda delectus nesciunt repellendus? Animi cum expedita fugit harum incidunt magnam mollitia obcaecati quod tempore ullam! Cum dicta ducimus eveniet modi reiciendis unde. Blanditiis fugit nulla officia similique vero? Aperiam iste, nihil. Ab alias aliquam aperiam assumenda, autem consequatur dignissimos eaque expedita ipsa modi repellat tempore, ut, veritatis?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet, blanditiis corporis culpa deleniti earum expedita harum inventore laborum maiores minima molestias, necessitatibus nostrum officiis perferendis quaerat quia quibusdam quis quisquam quo rerum sed sequi suscipit ullam vel voluptas.</p>
+    </section>
+    <section id="contact-me" class="contact-me">
+        <h2>contact me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aliquid consequuntur distinctio eum exercitationem explicabo illo iure, magnam maiores praesentium similique sint tempore totam unde ut vel voluptas? Alias blanditiis culpa ducimus ea earum esse excepturi facilis illo, impedit inventore iste modi nam natus nobis, obcaecati quidem repellat, unde voluptatibus.</p>
+        <table>
+            <tr>
+                <td>your name</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>your email</td>
+                <td><input type="email" /></td>
+            </tr>
+            <tr>
+                <td>your message</td>
+                <td><textarea rows="5" cols="30"></textarea></td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>

@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Input Types</title>
+    <style>
+        body{
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+        h2{
+        font-size:12px;
+        }
+        form{
+            background-image:url("img/background.jpg");
+            padding:15px;
+            width:450px;
+            color:white;
+            border:3px solid white;
+            box-shadow:0 0 15px black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 align="center">HTML Input Types</h1>
+
+    <!-- input type text -->
+    <h2>Text Box</h2>
+    <form>
+        <label>user name  </label>
+        <input type="text" />
+    </form>
+    <!-- input type password -->
+    <h2>Password Box</h2>
+    <form>
+        <lable>password</lable>
+        <input type="password" />
+    </form>
+    
+    <!-- input type radio -->
+    <h2>Radio Field</h2>
+    <form>
+        <label>radio</label>
+        <input type="radio" name="easy" value="yes"/>Yes
+        <input type="radio" name="easy" value="no" />No
+        <input type="radio" name="easy" value="ns" />No sure
+
+    </form>
+    <!-- input type checkbox -->
+    <h2>Check Box</h2>
+
+    <!-- HTML5 Input Types color, date, datetime-local, email,
+    month, number, range, search, time, url, Week-->
+    <form>
+        <lable>select your hobbies </lable>
+        <input type="checkbox" value="eating"/>eating
+        <input type="checkbox" value="coding" />coding
+        <input type="checkbox" value="sleeping" />sleeping
+
+    </form>
+    <h1 align="center">HTML5 Input Types</h1>
+
+    <!-- color -->
+    <h2>Input Type color</h2>
+    <form>
+        <label>select color</label>
+        <input type="color" />
+    </form>
+    <!-- date -->
+    <h2>Input Type date</h2>
+    <form>
+        <label>select a date</label>
+        <input type="date" />
+    </form>
+    <!-- datetime-local -->
+    <h2>Input Type datetime-local</h2>
+    <form>
+        <label>select a date and time</label>
+        <input type="datetime-local" />
+    </form>
+    <!-- email -->
+    <h2>Input Type email</h2>
+    <form>
+        <label>enter ypur email address</label>
+        <input type="email" />
+        <input type="submit" value="submit" />
+    </form>
+    <!-- month -->
+    <h2>Input Type month</h2>
+    <form>
+        <label>select a month</label>
+        <input type="month" />
+    </form>
+    <!-- number -->
+    <h2>Input Type number</h2>
+    <form>
+        <label> select a number</label>
+        <input type="number" min="0" max="100" step="5"/>
+        <input type="submit" value="submit" />
+    </form>
+    <!-- range -->
+    <h2>Input Type range</h2>
+    <form>
+        <label>select a range </label>
+        0<input type="range" min="0" max="100" id="abc"/>100
+        <button type="button" onclick="alert(document.getElementById('abc').value)">getvalue</button>
+    </form>
+    <!-- search -->
+    <h2>Input Type search</h2>
+    <form>
+    <label>serch</label>
+
+    <input type="search" />
+        <input type="submit" />
+        </form>
+    <!-- time -->
+    <h2>Input Type time</h2>
+    <form>
+        <label>select a time</label>
+        <input type="time" />
+    </form>
+    <!-- week -->
+    <h2>Input Type week</h2>
+    <form>
+        <label>select a week</label>
+        <input type="week" />
+    </form>
+        <!--file-->
+        <h2>input type file</h2>
+        <form>
+            <label>select a file</label>
+            <input type="file">
+            <input type="submit" value="upload" />
+        </form>
+   
+    <!--url-->
+    <h2>input type url</h2>
+    <form>
+        <label>enter your website</label>
+        <input type="url" />
+        <input type="submit" value="submit" />
+    </form>
+<br><br><br>
+</body>
+</html>

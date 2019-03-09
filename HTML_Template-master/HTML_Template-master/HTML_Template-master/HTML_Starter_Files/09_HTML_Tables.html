@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table TAG</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+        table, tr, th, td {
+            text-align:center;
+        }
+         table{
+            width:100%;
+            box-shadow:0 0 15px green;
+        }
+         #cus thead{
+             background-color:red;
+             color:white;
+         }
+         #cus tbody{
+             background-color:lightsalmon;
+         }
+      #body thead{
+            background-color: red;
+            color: white;
+        }
+
+       #body tbody {
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <!-- Simple Table -->
+    <h2> Simple Table </h2>
+
+    <table id="body">
+        <thead>
+            <tr>
+                <th>sNo</th>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>supriya</td>
+                <td>chakkavaripalem</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>kavaya</td>
+                <td>pandrapadu</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>naga</td>
+                <td>chakkavaripalem</td>
+            </tr>
+        </tbody>
+    </table>    
+
+    <!-- Table with Col Span -->
+    <h2> Table with Col Span </h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>sNo</th>
+                <th colspan="2">Name</th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>supriya</td>
+                <td>chakkavaripalem</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>kavaya</td>
+                <td>pandrapadu</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>naga</td>
+               <td>paravali</td>
+            </tr>
+        </tbody>
+    </table> 
+    <!-- Table With Row Span -->
+    <h2> Table With Row Span </h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>sNo</th>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>supriya</td>
+                <td>chakkavaripalem</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td rowspan="2">kavya</td>
+                <td>pandrapadu</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>naga</td>
+            </tr>
+        </tbody>
+    </table> 
+
+    <!-- Custom Table with CSS -->
+    <h2> Custom Table with CSS </h2>
+
+    <table id="cus">
+        <thead>
+            <tr>
+                <th>sNo</th>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>supriya</td>
+                <td>chakkavaripalem</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>kavaya</td>
+                <td>pandrapadu</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>naga</td>
+                <td>chakkavaripalem</td>
+            </tr>
+        </tbody>
+    </table> 
+</body>
+</html>
